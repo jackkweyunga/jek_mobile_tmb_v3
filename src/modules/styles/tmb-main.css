@@ -1,0 +1,430 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+#tmb {
+background-color: #F6F6F5;
+min-height: 100vh;
+}
+
+.tmb-wrapper {
+    /* max-width: 540px; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+@media (min-width: 991.98px) { 
+    .tmb-wrapper {
+        width: 540px;
+    }
+ }
+
+.background-svg {
+    position: fixed;
+    top: -50%;
+    left:-50%;
+    transform: translate(50%, 50%);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90%;
+    opacity: .4;
+}
+
+.tmb-table {
+    width: 100%;
+}
+
+.tmb-flex-center-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tmb-light {
+    background-color: aliceblue;
+}
+
+.tmb-top {
+    min-height: 30px;
+    z-index: 1;
+    /* background-color: #FAF9F9; */
+    background-color: #F2F2F3;
+}
+
+.tmb-home-top {
+    height: 230px;
+    z-index: 1;
+    background: #00664F;
+    /* Old browsers */
+}
+
+.tmb-home-top::before {
+    content: '';
+    background-color: #197561;
+    height: 1px;
+    top: 150px;
+    width: 100%;
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #197561;
+    border-bottom: 50px solid #197561;
+    z-index: -2;
+    border: 1px solid #197561;
+
+}
+
+.tmb-home-top::after {
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #197561;
+    border-bottom: 50px solid #197561;
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 40px;
+    translate: 50%;
+    z-index: -1;
+}
+
+
+.tmb-ft {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tmb-f-dark {
+    color: #1C2128;
+}
+
+.tmb-f-dark-op-80 {
+    color: #1C2128;
+    opacity: .8;
+}
+
+.tmb-f-dark-op-70 {
+    color: #1C2128;
+    opacity: .7;
+}
+
+.tmb-f-dark-op-60 {
+    color: #1C2128;
+    opacity: .6;
+}
+
+.tmb-f-dark-op-50 {
+    color: #1C2128;
+    opacity: .5;
+}
+
+.tmb-f-dark-op-40 {
+    color: #1C2128;
+    opacity: .4;
+}
+
+.tmb-f-dark-op-30 {
+    color: #1C2128;
+    opacity: .3;
+}
+
+.tmb-f-white-op-80 {
+    color: #1C2128;
+    opacity: .8;
+}
+
+.tmb-f-white-op-70 {
+    color: #1C2128;
+    opacity: .7;
+}
+
+.tmb-f-white-op-60 {
+    color: #1C2128;
+    opacity: .6;
+}
+
+.tmb-f-white-op-50 {
+    color: #1C2128;
+    opacity: .5;
+}
+
+.tmb-f-white-op-40 {
+    color: #1C2128;
+    opacity: .4;
+}
+
+.tmb-f-white-op-30 {
+    color: #1C2128;
+    opacity: .3;
+}
+
+.tmb-fw-800 {
+    font-weight: 800;
+}
+
+.tmb-fw-700 {
+    font-weight: 700;
+}
+
+.tmb-fw-600 {
+    font-weight: 600;
+}
+
+.tmb-f-9 {
+    font-size: 9px;
+}
+
+.tmb-f-12 {
+    font-size: 12px;
+}
+
+.tmb-f-14 {
+    font-size: 14px;
+}
+
+.tmb-f-16 {
+    font-size: 16px;
+}
+
+.tmb-f-18 {
+    font-size: 18px;
+}
+
+.tmb-f-20 {
+    font-size: 20px;
+}
+
+.tmb-f-24 {
+    font-size: 24px;
+}
+
+.tmb-f-28 {
+    font-size: 28px;
+}
+
+.tmb-f-32 {
+    font-size: 32px;
+}
+
+.tmb-f-34 {
+    font-size: 34px;
+}
+
+.tmb-f-36 {
+    font-size: 36px;
+}
+
+.tmb-f-38 {
+    font-size: 38px;
+}
+
+.tmb-f-40 {
+    font-size: 40px;
+}
+
+.tmb-f-42 {
+    font-size: 42px;
+}
+
+.tmb-body {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: -15px;
+    background-color: #FEFEFE;
+    min-height: 100vh;
+    height: 100%;
+    z-index: 3;
+}
+
+.tmb-cal-day {
+    border-radius: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tmb-cal-day label {
+    pointer-events: none;
+}
+
+/* .tmb-cal-day:hover {
+    opacity: .4;
+} */
+
+.current-day {
+    background: #FF7648;
+    color: #FFFF;
+}
+
+.tmb-footer {
+    background-color: #FAF9F9;
+}
+
+
+/* day menu icon */
+
+#day-menu {
+    color: #1C2128;
+    opacity: .3;
+    cursor: pointer;
+}
+
+#home-icon {
+    color: #1C2128;
+    opacity: .3;
+    cursor: pointer;
+}
+
+.tmb-calender {
+    z-index: 2;
+    background-color: inherit;
+}
+
+
+.tmb-card:hover {
+    animation-duration: 2s;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.tmb-op-70 {
+    opacity: .7;
+    animation-duration: 2s;
+}
+
+.tmb-op-60 {
+    opacity: .6;
+    animation-duration: 2s;
+}
+
+.tmb-op-50 {
+    opacity: .5;
+    animation-duration: 2s;
+}
+
+.tmb-op-40 {
+    opacity: .4;
+    animation-duration: 2s;
+}
+
+.tmb-op-30 {
+    opacity: .3;
+    animation-duration: 2s;
+}
+
+.tmb-op-20 {
+    opacity: .2;
+    animation-duration: 2s;
+}
+
+
+.event-card {
+    border-radius: 20px;
+    border: none;
+    /* background-color: #F6F6F5; */
+    background-color: #F2F2F3;
+
+}
+
+.event-active {
+    background-color: #4DC591;
+    color: white;
+}
+
+.event-active label span {
+    color: white;
+}
+
+.event-active span {
+    color: white;
+}
+
+#inner-menu {
+    cursor: pointer;
+}
+
+.tmb-search-icon {
+    position: absolute;
+    right: 2px;
+    padding-right: 5px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tmb-anime-bounce {
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+
+.tmb-anime-flash {
+    animation: flash;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+
+.tmb-anime-backOutUp {
+    animation: backOutUp;
+    animation-duration: 2s;
+}
+
+.tmb-h-scroll {
+    background-color: inherit;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+
+.tmb-card {
+    border-radius: 20px;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.tmb-footer {
+    z-index: 1;
+}
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50pxs;
+    opacity: .7;
+}
+
+.tmb-loader {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(7px);
+    z-index: 4;
+}
+
+/* .loader span label {
+      
+  } */
